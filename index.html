@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy – Aqua Guard Tracker</title>
+  <style>
+    :root {
+      --primary: #1a73e8;
+      --text: #202124;
+      --muted: #5f6368;
+      --border: #dadce0;
+      --bg: #ffffff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.7;
+      padding: 0 16px;
+    }
+    .container { max-width: 720px; margin: 0 auto; padding: 48px 0 80px; }
+    h1 { font-size: 1.75rem; font-weight: 700; margin-bottom: 8px; }
+    .meta { color: var(--muted); font-size: 0.875rem; margin-bottom: 40px; }
+    .lang-switcher {
+      display: flex; gap: 8px; margin-bottom: 40px;
+    }
+    .lang-switcher button {
+      padding: 6px 16px; border: 1px solid var(--border); border-radius: 20px;
+      background: none; cursor: pointer; font-size: 0.875rem; color: var(--muted);
+    }
+    .lang-switcher button.active {
+      background: var(--primary); color: #fff; border-color: var(--primary);
+    }
+    section { margin-bottom: 32px; }
+    h2 {
+      font-size: 1.1rem; font-weight: 600; margin-bottom: 10px;
+      padding-bottom: 6px; border-bottom: 1px solid var(--border);
+    }
+    p { margin-bottom: 10px; }
+    ul { padding-left: 20px; margin-bottom: 10px; }
+    li { margin-bottom: 4px; }
+    a { color: var(--primary); }
+    .lang-block { display: none; }
+    .lang-block.active { display: block; }
+    @media (prefers-color-scheme: dark) {
+      :root { --text: #e8eaed; --muted: #9aa0a6; --border: #3c4043; --bg: #202124; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <div class="lang-switcher">
+    <button class="active" onclick="setLang('ja')">日本語</button>
+    <button onclick="setLang('en')">English</button>
+  </div>
+
+  <!-- ==================== JAPANESE ==================== -->
+  <div id="ja" class="lang-block active">
+    <h1>プライバシーポリシー</h1>
+    <p class="meta">Aqua Guard Tracker &nbsp;|&nbsp; archfill &nbsp;|&nbsp; 最終更新: 2026年3月</p>
+
+    <section>
+      <h2>1. はじめに</h2>
+      <p>
+        本プライバシーポリシーは、archfill（以下「当方」）が提供するモバイルアプリ
+        <strong>Aqua Guard Tracker</strong>（以下「本アプリ」）における
+        情報の収集・利用方法について説明します。
+        本アプリをご利用いただくことで、本ポリシーに同意したものとみなします。
+      </p>
+    </section>
+
+    <section>
+      <h2>2. 収集する情報</h2>
+      <p>本アプリは以下の情報を収集します。</p>
+      <ul>
+        <li>
+          <strong>利用状況データ（Firebase Analytics）</strong>：
+          アプリの起動回数、画面遷移、ボタンタップなどの匿名の操作ログ。
+          個人を特定できる情報は含まれません。
+        </li>
+        <li>
+          <strong>クラッシュレポート（Firebase Crashlytics）</strong>：
+          アプリのクラッシュ時に、デバイス情報・エラーログを自動的に収集します。
+          このデータは不具合修正のためのみに使用されます。
+        </li>
+        <li>
+          <strong>ローカル保存データ</strong>：
+          メンテナンス記録・チェックリスト結果は、お使いの端末内のデータベース（SQLite）に
+          のみ保存されます。このデータが外部サーバーに送信されることはありません。
+        </li>
+        <li>
+          <strong>アプリ設定（SharedPreferences）</strong>：
+          テーマ・言語・通知設定などのユーザー設定は端末内にのみ保存されます。
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. 情報の利用目的</h2>
+      <ul>
+        <li>アプリの品質向上・バグ修正</li>
+        <li>機能の利用状況把握と改善優先度の決定</li>
+        <li>クラッシュの検知と迅速な対応</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. 第三者サービス</h2>
+      <p>本アプリは以下のサードパーティサービスを使用しています。</p>
+      <ul>
+        <li>
+          <strong>Firebase Analytics</strong>（Google LLC）：
+          匿名の利用状況データを収集・分析します。
+          詳細は <a href="https://policies.google.com/privacy" target="_blank">Google プライバシーポリシー</a> をご覧ください。
+        </li>
+        <li>
+          <strong>Firebase Crashlytics</strong>（Google LLC）：
+          クラッシュ情報を収集し、不具合修正に活用します。
+        </li>
+      </ul>
+      <p>
+        これらのサービスによるデータ収集はGoogleのプライバシーポリシーに基づきます。
+        当方がお客様の情報を販売・共有することはありません。
+      </p>
+    </section>
+
+    <section>
+      <h2>5. 通知</h2>
+      <p>
+        本アプリはローカル通知機能を使用します。通知の許可はOS側の設定でいつでも変更できます。
+        通知はデバイス上でのみ生成され、外部サーバーへの通信は伴いません。
+      </p>
+    </section>
+
+    <section>
+      <h2>6. 子どもについて</h2>
+      <p>
+        本アプリは13歳未満の方を対象としていません。
+        13歳未満のお子様からの個人情報を意図的に収集することはありません。
+      </p>
+    </section>
+
+    <section>
+      <h2>7. データの保持・削除</h2>
+      <p>
+        端末内のデータ（メンテナンス記録・設定）はアプリをアンインストールすることで削除されます。
+        Firebase Analytics・Crashlyticsのデータ保持期間についてはGoogleのポリシーに従います。
+      </p>
+    </section>
+
+    <section>
+      <h2>8. ポリシーの変更</h2>
+      <p>
+        本ポリシーは予告なく変更される場合があります。
+        重要な変更はアプリのアップデートを通じてお知らせします。
+        本ページの「最終更新」日付をご確認ください。
+      </p>
+    </section>
+
+    <section>
+      <h2>9. お問い合わせ</h2>
+      <p>
+        プライバシーに関するご質問は、App Store / Google Play のサポートリンクよりお問い合わせください。
+      </p>
+    </section>
+  </div>
+
+  <!-- ==================== ENGLISH ==================== -->
+  <div id="en" class="lang-block">
+    <h1>Privacy Policy</h1>
+    <p class="meta">Aqua Guard Tracker &nbsp;|&nbsp; archfill &nbsp;|&nbsp; Last updated: March 2026</p>
+
+    <section>
+      <h2>1. Introduction</h2>
+      <p>
+        This Privacy Policy describes how archfill ("we", "us") collects, uses, and handles information
+        in connection with the mobile application <strong>Aqua Guard Tracker</strong> ("the App").
+        By using the App, you agree to this policy.
+      </p>
+    </section>
+
+    <section>
+      <h2>2. Information We Collect</h2>
+      <ul>
+        <li>
+          <strong>Usage data (Firebase Analytics)</strong>:
+          Anonymous event logs such as app launches, screen views, and button taps.
+          No personally identifiable information is included.
+        </li>
+        <li>
+          <strong>Crash reports (Firebase Crashlytics)</strong>:
+          Device information and error logs are automatically collected on crashes
+          and used solely for bug fixes.
+        </li>
+        <li>
+          <strong>Local data</strong>:
+          Maintenance records and checklist results are stored only in the on-device
+          database (SQLite) and are never sent to external servers.
+        </li>
+        <li>
+          <strong>App settings (SharedPreferences)</strong>:
+          User preferences such as theme, language, and notification settings are
+          stored only on your device.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. How We Use Information</h2>
+      <ul>
+        <li>Improving app quality and fixing bugs</li>
+        <li>Understanding feature usage to prioritize improvements</li>
+        <li>Detecting and responding to crashes quickly</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Third-Party Services</h2>
+      <p>The App uses the following third-party services:</p>
+      <ul>
+        <li>
+          <strong>Firebase Analytics</strong> (Google LLC):
+          Collects anonymous usage data.
+          See <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>.
+        </li>
+        <li>
+          <strong>Firebase Crashlytics</strong> (Google LLC):
+          Collects crash information for bug resolution.
+        </li>
+      </ul>
+      <p>
+        Data collected by these services is governed by Google's Privacy Policy.
+        We do not sell or share your information with any other parties.
+      </p>
+    </section>
+
+    <section>
+      <h2>5. Notifications</h2>
+      <p>
+        The App uses local notifications. You can modify notification permissions at any time
+        in your device's OS settings. Notifications are generated on-device and do not involve
+        communication with external servers.
+      </p>
+    </section>
+
+    <section>
+      <h2>6. Children</h2>
+      <p>
+        The App is not intended for children under 13 years of age.
+        We do not knowingly collect personal information from children under 13.
+      </p>
+    </section>
+
+    <section>
+      <h2>7. Data Retention and Deletion</h2>
+      <p>
+        On-device data (maintenance records and settings) is deleted when the App is uninstalled.
+        Retention periods for Firebase Analytics and Crashlytics data are governed by Google's policies.
+      </p>
+    </section>
+
+    <section>
+      <h2>8. Changes to This Policy</h2>
+      <p>
+        We may update this policy from time to time. Significant changes will be communicated
+        through App updates. Please check the "Last updated" date on this page.
+      </p>
+    </section>
+
+    <section>
+      <h2>9. Contact Us</h2>
+      <p>
+        For privacy-related questions, please reach out via the support link on the
+        App Store or Google Play listing.
+      </p>
+    </section>
+  </div>
+
+</div>
+<script>
+  function setLang(lang) {
+    document.querySelectorAll('.lang-block').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.lang-switcher button').forEach(el => el.classList.remove('active'));
+    document.getElementById(lang).classList.add('active');
+    event.target.classList.add('active');
+    document.documentElement.lang = lang;
+  }
+</script>
+</body>
+</html>
